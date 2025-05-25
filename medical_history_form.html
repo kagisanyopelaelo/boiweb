@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical History Form – Boipelo Dental Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Include your standard nav menu here -->
+  </header>
+
+  <main>
+    <h1>Medical History Form</h1>
+    <p>Please fill out the form below or download a printable version to bring with you.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="contact">Phone Number:</label>
+        <input type="tel" id="contact" name="contact">
+      </fieldset>
+
+      <fieldset>
+        <legend>Medical History</legend>
+        <label>Have you ever had or currently have any of the following conditions?</label><br>
+        <input type="checkbox" name="conditions" value="Diabetes"> Diabetes<br>
+        <input type="checkbox" name="conditions" value="Heart Disease"> Heart Disease<br>
+        <input type="checkbox" name="conditions" value="Asthma"> Asthma<br>
+        <input type="checkbox" name="conditions" value="Epilepsy"> Epilepsy<br>
+        <input type="checkbox" name="conditions" value="Allergies"> Allergies<br>
+        <input type="checkbox" name="conditions" value="None"> None<br><br>
+
+        <label for="medications">Current Medications (if any):</label><br>
+        <textarea id="medications" name="medications" rows="4"></textarea>
+
+        <label for="allergies">Known Allergies:</label><br>
+        <textarea id="allergies" name="allergies" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consent</legend>
+        <label>
+          <input type="checkbox" name="consent" required>
+          I confirm the information provided is true and complete.
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p>Prefer to fill it out by hand? <a href="forms/medical_history_form.pdf" download>Download the PDF version</a></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consent for Treatment – Boipelo Dental Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Include your navigation here -->
+  </header>
+
+  <main>
+    <h1>Consent for Treatment</h1>
+    <p>Please read the information below carefully and submit your consent.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Patient Information</legend>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consent Details</legend>
+        <p>
+          I, the undersigned, authorize the dental professionals at Boipelo Dental Clinic to perform the necessary dental procedures. 
+          I understand the nature of the treatment, the expected benefits, and the potential risks involved.
+        </p>
+
+        <label>
+          <input type="checkbox" name="understanding" required>
+          I confirm that I have read and understood the information provided above.
+        </label><br><br>
+
+        <label>
+          <input type="checkbox" name="voluntary" required>
+          I consent to treatment voluntarily and understand I may withdraw this consent at any time.
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Signature</legend>
+        <label for="signature">Type Your Full Name (as signature):</label>
+        <input type="text" id="signature" name="signature" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </fieldset>
+
+      <button type="submit">Submit Consent</button>
+    </form>
+
+    <p>Need a printable version? <a href="forms/consent_form.pdf" download>Download PDF Consent Form</a></p>
+  </main>
+</body>
+</html>

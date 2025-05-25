@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Patient Registration | Boipelo Dental Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- Navigation here -->
+  </header>
+
+  <main>
+    <h1>New Patient Registration Form</h1>
+    <form action="#" method="post">
+
+      <h2>Personal Information</h2>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="address">Residential Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea><br>
+
+      <h2>Medical History</h2>
+      <label>Do you have any of the following? (Check all that apply)</label><br>
+      <input type="checkbox" name="conditions" value="diabetes"> Diabetes<br>
+      <input type="checkbox" name="conditions" value="hypertension"> Hypertension<br>
+      <input type="checkbox" name="conditions" value="asthma"> Asthma<br>
+      <input type="checkbox" name="conditions" value="none"> None<br><br>
+
+      <label for="medications">Current Medications:</label>
+      <textarea id="medications" name="medications" rows="2"></textarea><br>
+
+      <label for="allergies">Known Allergies:</label>
+      <textarea id="allergies" name="allergies" rows="2"></textarea><br>
+
+      <h2>Emergency Contact</h2>
+      <label for="emergency_name">Full Name:</label>
+      <input type="text" id="emergency_name" name="emergency_name" required><br>
+
+      <label for="emergency_phone">Phone Number:</label>
+      <input type="tel" id="emergency_phone" name="emergency_phone" required><br>
+
+      <label for="relationship">Relationship:</label>
+      <input type="text" id="relationship" name="relationship"><br><br>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </main>
+
+</body>
+</html>

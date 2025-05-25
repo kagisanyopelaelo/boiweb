@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services | Boipelo Dental Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/banner2.png" alt="Boipelo Dental Clinic Logo" class="logo" width="150px" height="150px">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="showService('general')">General Dentistry</a></li>
+            <li><a href="#" onclick="showService('pediatric')">Pediatric Dentistry</a></li>
+            <li><a href="#" onclick="showService('restorative')">Restorative Treatments</a></li>
+            <li><a href="#" onclick="showService('orthodontics')">Orthodontic Services</a></li>
+          </ul>
+        </li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+        <section id="services-intro">
+          <h1>Our Dental Services</h1>
+          <p>
+            At Boipelo Dental Clinic, we are committed to providing a wide range of dental care tailored to meet the unique needs
+            of every patient. Whether you need a routine cleaning or advanced orthodontic treatment, our experienced team is here to help.
+          </p>
+          <p>
+            Explore our services below by selecting a category from the dropdown menu.
+          </p>
+        </section>
+    
+        <!-- Sections will be shown/hidden with JS -->
+        <section id="general" class="service-section">
+          <h2>General Dentistry</h2>
+          <p>Includes routine exams, cleanings, x-rays, and preventive care to maintain oral health.</p>
+        </section>
+    
+        <section id="pediatric" class="service-section">
+          <h2>Pediatric Dentistry</h2>
+          <p>Specialized care for infants, children, and teens in a kid-friendly environment.</p>
+        </section>
+    
+        <section id="restorative" class="service-section">
+          <h2>Restorative Treatments</h2>
+          <p>We restore your smile with fillings, crowns, bridges, and dentures designed for comfort and function.</p>
+        </section>
+    
+        <section id="orthodontics" class="service-section">
+          <h2>Orthodontic Services</h2>
+          <p>We offer braces and aligners to correct tooth and jaw alignment for a healthier, straighter smile.</p>
+        </section>
+      </main>
+    
+      <script>
+        function showService(id) {
+          const sections = document.querySelectorAll('.service-section');
+          sections.forEach(section => section.style.display = 'none');
+          document.getElementById(id).style.display = 'block';
+        }
+      </script>
+    <section id="general" class="service-section" style="display:none;">
+      <h2>General Dentistry</h2>
+      <img src="images/general1.jpg">
+      <p>
+        At Boipelo Dental Clinic, our general dentistry services form the foundation of your long-term oral health.
+        We offer comprehensive preventive and diagnostic care tailored to patients of all ages. Whether you're coming in
+        for a routine check-up or you're experiencing discomfort, our team is here to ensure your smile stays healthy.
+    </p>
+
+    <h3>Our General Services Include:</h3>
+    <img src="images/general2.jpg">
+    <ul>
+        <li><strong>Oral Examinations:</strong> Complete assessment of teeth, gums, and mouth to detect any early signs of issues.</li>
+        <li><strong>Dental Cleanings:</strong> Removal of plaque and tartar to prevent gum disease and cavities.</li>
+        <li><strong>Tooth Fillings:</strong> Durable, natural-looking fillings to treat and seal cavities.</li>
+        <li><strong>X-rays & Diagnostics:</strong> High-quality imaging for accurate detection of hidden problems.</li>
+        <li><strong>Fluoride Treatments:</strong> Strengthens tooth enamel and protects against decay.</li>
+        <li><strong>Patient Education:</strong> Tips and guidance on brushing, flossing, and diet for long-term health.</li>
+    </ul>
+
+    <p>
+        Our friendly team uses the latest technology and gentle techniques to make sure every visit is as comfortable as possible.
+        We believe in building lasting relationships with our patients and working together to achieve optimal dental health.
+    </p>
+
+    <p><em>Your journey to a brighter, healthier smile starts here!</em></p>
+</section>
+
+    <section id="pediatric" class="service-section" style="display:none;">
+      <h2>Pediatric Dentistry</h2>
+      <img src="images/ped1.png">
+      <p>Gentle and fun care for kids, from baby teeth to teens. We make every visit stress-free.</p>
+      <p>
+        Our pediatric dental services are designed to make every child feel safe, comfortable, and even excited
+        about visiting the dentist! At Boipelo Dental Clinic, we specialize in providing gentle and friendly care
+        tailored to the unique needs of infants, children, and teenagers.
+    </p>
+
+    <h3>We Offer:</h3>
+    <img src="images/ped4.webp" width="250px" height="250px">
+    <ul>
+        <li><strong>First Dental Visits:</strong> Gentle exams for babies and toddlers to introduce them to the dental chair.</li>
+        <li><strong>Preventive Cleanings & Fluoride:</strong> Keep little teeth strong and cavity-free.</li>
+        <li><strong>Sealants:</strong> Protective coatings to shield molars from decay.</li>
+        <li><strong>Tooth-Colored Fillings:</strong> Kid-friendly, natural-looking fillings for small cavities.</li>
+        <li><strong>Habit Counseling:</strong> Guidance for thumb-sucking, pacifier use, and teething care.</li>
+        <img src="images/ped2.jpg">
+        <li><strong>Emergency Care:</strong> Prompt attention to dental injuries or sudden pain.</li>
+    </ul>
+
+    <p>
+        We understand that a positive early dental experience can shape a lifetime of healthy habits. That’s why
+        we focus on education, patience, and creating a fun environment — complete with friendly staff and a calm setting.
+    </p>
+
+    <p><em>Your child’s smile deserves a bright, healthy start — and we’re here to make it happen!</em></p>
+</section>
+
+    <section id="restorative" class="service-section" style="display:none;">
+      <h2>Restorative Treatments</h2>
+      <img src="images/restorative3.jpg">
+      <p>From fillings to crowns and bridges, we repair and restore damaged or missing teeth.</p>
+        <p>
+            At Boipelo Dental Clinic, we offer restorative dentistry solutions to repair damaged, decayed, or missing teeth.
+            Our goal is to restore both the function and beauty of your smile, using techniques that are durable, safe, and aesthetically pleasing.
+        </p>
+    
+        <h3>Our Restorative Services Include:</h3>
+        <img src="images/restorative2.jpg">
+        <ul>
+            <li><strong>Dental Fillings:</strong> Treat cavities with tooth-colored materials that blend in naturally.</li>
+            <li><strong>Dental Crowns:</strong> Strengthen and protect weakened or broken teeth with custom-made caps.</li>
+            <li><strong>Bridges:</strong> Replace one or more missing teeth using secure, fixed dental bridges.</li>
+            <img src="images/restorative1.jpg">
+            <li><strong>Dentures:</strong> Full and partial removable dentures for patients with multiple missing teeth.</li>
+            <li><strong>Root Canal Therapy:</strong> Save infected teeth by removing the pulp and sealing the root.</li>
+            <li><strong>Tooth Extraction:</strong> Safe removal of damaged or impacted teeth when necessary.</li>
+        </ul>
+    
+        <p>
+            Every treatment is carefully planned with your comfort and oral health in mind. We use modern materials
+            and technology to ensure long-lasting results that feel as good as they look.
+        </p>
+    
+        <p><em>Let us help you regain confidence in your smile — one tooth at a time!</em></p>
+    </section>
+
+    <section id="orthodontics" class="service-section" style="display:none;">
+        <h2>Orthodontic Services</h2>
+        <img src="images/ortho4.jpg">
+        <p>
+            At Boipelo Dental Clinic, our orthodontic services are tailored to align your teeth and jaw for a healthier,
+            more confident smile. Whether you’re a teen or an adult, we offer personalized solutions to suit your lifestyle and dental goals.
+        </p>
+    
+        <h3>Our Orthodontic Services Include:</h3>
+        <ul>
+            <li><strong>Braces:</strong> Traditional metal braces for reliable, time-tested teeth alignment.</li>
+            <li><strong>Ceramic Braces:</strong> Tooth-colored brackets for a more subtle look during treatment.</li>
+            <img src="images/ortho1.webp" width="200px" height="200px">
+            <li><strong>Clear Aligners:</strong> Removable, nearly invisible trays for comfortable, discreet straightening.</li>
+            <li><strong>Retainers:</strong> Custom-fitted devices to maintain your new smile after treatment.</li>
+            <img src="images/ortho2.jpg">
+            <li><strong>Jaw Alignment Therapy:</strong> Correct bite problems (malocclusion) for better function and appearance.</li>
+            <img src="images/ortho3.jpg">
+        </ul>
+    
+        <p>
+            We work closely with our patients throughout the entire orthodontic journey — from consultation to aftercare — 
+            ensuring you're informed and comfortable every step of the way.
+        </p>
+    
+        <p><em>Straighter teeth aren’t just beautiful — they’re healthier, too!</em></p>
+    </section>
+    
+    
+    </section>
+  </main>
+
+  <script>
+    function showService(serviceId) {
+      const sections = document.querySelectorAll('.service-section');
+      sections.forEach(section => {
+        section.style.display = section.id === serviceId ? 'block' : 'none';
+      });
+    }
+  </script>
+
+<footer>
+  <p>&copy; 2025 Boipelo Dental Clinic. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
+
+    
